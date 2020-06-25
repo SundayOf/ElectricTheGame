@@ -1,0 +1,98 @@
+body {background-color:#112;}
+
+.nixcont{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+.nixpair{padding:0px 5px; float:left; height:100px;pointer-events:none;}
+
+.nixbg{
+font-family: 'Josefin Sans', sans-serif;
+font-size:70px;
+
+box-sizing:border-box;
+position:relative;height:80px;line-height:80px; width:50px; float:left;
+border-radius: 20px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+
+padding-top:8px; margin:0px 5px;
+
+box-shadow: 
+inset 0px 1px 3px 2px rgba(90,  0,   0, 0.9),
+inset 0px 2px 2px 3px rgba(230, 220, 0, 1),
+inset 0px 4px 4px 3px rgba(255, 0,   0, 0.9);
+
+
+background-image:url("yLl7mj.png"), 
+                 -webkit-linear-gradient(top, rgba(35, 20, 40,  0.7), 
+                                              rgba(35, 20, 40,  0.5), 
+                                              rgba(35, 20, 110, 0.7));
+
+background-image:url("yLl7mj.png"), 
+                    -moz-linear-gradient(top, rgba(35, 20, 40,  0.7), 
+                                              rgba(35, 20, 40,  0.5), 
+                                              rgba(35, 20, 110, 0.7));
+
+background-image:url("yLl7mj.png"), 
+                     -ms-linear-gradient(top, rgba(35, 20, 40,  0.7), 
+                                              rgba(35, 20, 40,  0.5), 
+                                              rgba(35, 20, 110, 0.7));
+
+background-image:url("yLl7mj.png"), 
+                      -o-linear-gradient(top, rgba(35, 20, 40,  0.7), 
+                                              rgba(35, 20, 40,  0.5), 
+                                              rgba(35, 20, 110, 0.7));
+
+background-image:url("yLl7mj.png"), 
+                         linear-gradient(top, rgba(35, 20, 40,  0.7), 
+                                              rgba(35, 20, 40,  0.5), 
+                                              rgba(35, 20, 110, 0.7));
+
+background-repeat:repeat, no-repeat;
+background-size:12px, 100%;
+}
+
+.nixbg:after{
+content:'';
+display:block;
+position:absolute;top:100%; left:0; width:100%; height:20%; background-color:gray;
+border-bottom-left-radius:35%;
+border-bottom-right-radius:35%;
+
+background-image:-webkit-radial-gradient(  40% 100% , #ea4 0%, #f93 15%, #caa 50%, #778 75%, #345 100%   );
+background-image:   -moz-radial-gradient(  40% 100% , #ea4 0%, #f93 15%, #caa 50%, #778 75%, #345 100%   );
+background-image:    -ms-radial-gradient(  40% 100% , #ea4 0%, #f93 15%, #caa 50%, #778 75%, #345 100%   );
+background-image:     -o-radial-gradient(  40% 100% , #ea4 0%, #f93 15%, #caa 50%, #778 75%, #345 100%   );
+background-image:        radial-gradient(  40% 100% , #ea4 0%, #f93 15%, #caa 50%, #778 75%, #345 100%   );
+}
+
+.nixbg .nix{
+width:100%; text-align:center; position:absolute; 
+color:rgba(60, 40, 20, 1  );
+pointer-events:none;
+transition:color 0.5s, text-shadow 0.5s;
+transition-timing-function:ease-out;
+
+}
+
+.nixbg .nix_open{
+transition:color 0.2s, text-shadow 0.2s;
+transition-timing-function:ease-out;
+
+color: transparent; 
+text-shadow: 
+0   0   1px  rgba(254, 252, 124, 1    ),
+0   0   3px  rgba(255, 217, 54,  0.7  ),
+0   0   5px  rgba(255, 0,   0,   1    ),
+0   0   14px rgba(255, 0,   0,   1    ),
+0   0   17px rgba(255, 0,   0,   1    ),
+0   0   20px rgba(255, 0,   0,   1    ),
+0   5px 25px rgba(0,   0,   255, 0.9  );
+
+font-weight:300;
+z-index:10;
+}

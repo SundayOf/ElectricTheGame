@@ -16,7 +16,15 @@ body{
     align-items: center;
 }
 #game {
+    border-radius: 2%;
     border: 1px solid rgb(255, 255, 255);
+    box-shadow: 
+    0 0 1px rgba(254, 252, 124, 1 ),
+    0 0 5px rgb(255, 217, 54),
+    0 0 1px rgba(255, 198, 0, 0.2),
+    0 0 6px rgba(255, 0, 0, 0.59),
+    0 0 17px rgba(255, 194, 83, 0.34),
+    0 0 1px rgb(255, 192, 0);
     width: 350px;
     height: 350px;
     display: flex;
@@ -45,7 +53,10 @@ body{
 #but:hover{
     opacity: 78%;
 }
+
+
 .button{
+    border-radius: 4%;
     background-color: rgb(67, 67, 67);
     width: 60px;
     height: 60px;
@@ -60,4 +71,49 @@ body{
 }
 #start{
     width: 50px;
+}
+.tableScore{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fakemain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#fake{
+    border-radius: 2%;
+    border: 1px solid rgb(255, 255, 255);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 
+    0 0 1px rgba(254, 252, 124, 1 ),
+    0 0 5px rgb(255, 217, 54),
+    0 0 1px rgba(255, 198, 0, 0.2),
+    0 0 6px rgba(255, 0, 0, 0.59),
+    0 0 17px rgba(255, 194, 83, 0.34),
+    0 0 1px rgb(255, 192, 0);
+}
+
+.fakebutton{
+    border-radius: 4%;
+    background: radial-gradient(rgb(255, 254, 206) 0% ,rgba(254, 189, 104, 0.9) 100%,rgb(254,141,81)75%,rgb(221, 122, 53));
+    box-shadow: 
+    0 0 1px rgba(254, 252, 124, 1 ),
+    0 0 5px rgb(255, 217, 54),
+    0 0 1px rgba(255, 198, 0, 0.2),
+    0 0 6px rgba(255, 0, 0, 0.59),
+    0 0 17px rgba(255, 194, 83, 0.34),
+    0 0 1px rgb(255, 192, 0);
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+.fakebutton:hover{
+    opacity: 78%;
 }

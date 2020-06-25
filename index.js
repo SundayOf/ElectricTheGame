@@ -1,4 +1,4 @@
-var color = 'orange';
+var color = 'rgb(244, 216, 156)';
 var colors = "rgb(67, 67, 67)";
 var shadow = '0 0 1px rgba(254, 252, 124, 1),0 0 5px rgb(255, 217, 54),0 0 1px rgba(255, 198, 0, 0.2),0 0 6px rgba(255, 0, 0, 0.59),0 0 17px rgba(255, 194, 83, 0.34),0 0 1px rgb(255, 192, 0)'
 var shadowNONE = 'none'
@@ -19,6 +19,8 @@ function changecolor(value){
 function BlockClick(value){
     changecolor(value)
     PlaceAround(value)
+    Count(value)
+    Win()
 }
 
 function CheckValue(value){
@@ -54,3 +56,127 @@ function PlaceAround(value){
         }
     });
 }
+//------------------------------------------------------//
+//Counter
+function Default(){
+    let h1 = 0;
+    let h2 = 0;
+    set_nix_class("h2", h2);
+    set_nix_class("h1", h1);
+  }
+    let h1 = 0;
+    let h2 = 0;
+  function Count() {
+      h2+=1  
+      if(h2 > 9){
+          h2 = 0
+          h1+=1
+          if(h1 > 1){
+              alert('Вы проиграли!')
+              document.location.reload(true);
+              h2 = 0
+              h1 = 0
+          }
+      }
+      
+      set_nix_class("h2", h2);
+      set_nix_class("h1", h1);   
+    } 
+//------------------------------------------------------//
+    //   function getRndInteger(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1) ) + min;
+    // }
+    // getRndInteger(1, 25)
+    // console.log(getRndInteger(1, 25))
+
+//------------------------------------------------------//  
+
+//------------------------------------------------------//
+  //add, remove or toggle css classess
+  function tog_class(id, cl) {
+      var elem = document.getElementById(id);
+      if (elem.classList.contains(cl) === true) {
+        elem.classList.remove(cl);
+      } else {
+        elem.classList.add(cl);
+      }
+    }
+    
+  function add_class(id, cl) {
+      var elem = document.getElementById(id);
+      if (elem.classList.contains(cl) !== true) {
+        elem.classList.add(cl);
+      }
+    }
+    
+  function rem_class(id, cl) {
+      var elem = document.getElementById(id);
+      if (elem.classList.contains(cl) === true) {
+        elem.classList.remove(cl);
+      }
+    }
+  //------------------------------------------------------//
+  //Class changes
+  function set_nix_class(target, val) {
+      for (i = 0; i < 10; i++) {
+        if (i != val) {
+          rem_class("nix_" + target + "_" + i, "nix_open");
+        }
+      }
+      add_class("nix_" + target + "_" + val, "nix_open");
+    }
+  //------------------------------------------------------//
+    function Win(){
+      if(document.getElementById('1.1').style.background == color){
+        if(document.getElementById('1.2').style.background == color){
+          if(document.getElementById('1.3').style.background == color){
+            if(document.getElementById('1.4').style.background == color){
+              if(document.getElementById('1.5').style.background == color){
+                if(document.getElementById('2.1').style.background == color){
+                  if(document.getElementById('2.2').style.background == color){
+                    if(document.getElementById('2.3').style.background == color){
+                      if(document.getElementById('2.4').style.background == color){
+                        if(document.getElementById('2.5').style.background == color){
+                          if(document.getElementById('3.1').style.background == color){
+                            if(document.getElementById('3.2').style.background == color){
+                              if(document.getElementById('3.3').style.background == color){
+                                if(document.getElementById('3.4').style.background == color){
+                                  if(document.getElementById('3.5').style.background == color){
+                                    if(document.getElementById('4.1').style.background == color){
+                                      if(document.getElementById('4.2').style.background == color){
+                                        if(document.getElementById('4.3').style.background == color){
+                                          if(document.getElementById('4.4').style.background == color){
+                                            if(document.getElementById('4.5').style.background == color){
+                                              if(document.getElementById('5.1').style.background == color){
+                                                if(document.getElementById('5.2').style.background == color){
+                                                  if(document.getElementById('5.3').style.background == color){
+                                                    if(document.getElementById('5.4').style.background == color){
+                                                      if(document.getElementById('5.5').style.background == color){
+                                                        setTimeout(() => { alert("Congrats! YOU ARE WINNER!")
+                                                        document.location.reload(true); }, 500);
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
