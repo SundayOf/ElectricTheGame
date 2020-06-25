@@ -1,0 +1,63 @@
+body{
+    background-color:#112;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#game {
+    border: 1px solid rgb(255, 255, 255);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.start_button{
+    display: flex;
+    justify-content: center;
+}
+#but{
+    background-color: currentColor;
+    color: transparent; 
+    text-shadow: 
+    0   0   1px  rgba(254, 252, 124, 1    ),
+    0   0   3px  rgba(255, 217, 54,  0.7  ),
+    0   0   5px  rgba(255, 0,   0,   1    ),
+    0   0   14px rgba(255, 0,   0,   1    ),
+    0   0   17px rgba(255, 0,   0,   1    ),
+    0   0   20px rgba(255, 0,   0,   1    ),
+    0   5px 25px rgba(0,   0,   255, 0.9  );
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+#but:hover{
+    opacity: 78%;
+}
+.button{
+    background-color: rgb(67, 67, 67);
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+.button:hover{
+    opacity: 78%;
+}
+.startbutton{
+    text-align: center;
+    margin: 40px;
+}
+#start{
+    width: 50px;
+}
