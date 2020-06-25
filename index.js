@@ -73,26 +73,16 @@ function Default(){
           h1+=1
           if(h1 > 1){
               alert('Вы проиграли!')
-              document.location.reload(true);
+              RestartGAME()
               h2 = 0
               h1 = 0
           }
       }
-      
       set_nix_class("h2", h2);
       set_nix_class("h1", h1);   
     } 
 //------------------------------------------------------//
-    //   function getRndInteger(min, max) {
-    //     return Math.floor(Math.random() * (max - min + 1) ) + min;
-    // }
-    // getRndInteger(1, 25)
-    // console.log(getRndInteger(1, 25))
-
-//------------------------------------------------------//  
-
-//------------------------------------------------------//
-  //add, remove or toggle css classess
+//add, remove or toggle css classess
   function tog_class(id, cl) {
       var elem = document.getElementById(id);
       if (elem.classList.contains(cl) === true) {
@@ -115,8 +105,8 @@ function Default(){
         elem.classList.remove(cl);
       }
     }
-  //------------------------------------------------------//
-  //Class changes
+//------------------------------------------------------//
+//Class changes
   function set_nix_class(target, val) {
       for (i = 0; i < 10; i++) {
         if (i != val) {
@@ -125,58 +115,89 @@ function Default(){
       }
       add_class("nix_" + target + "_" + val, "nix_open");
     }
-  //------------------------------------------------------//
+//------------------------------------------------------//
     function Win(){
-      if(document.getElementById('1.1').style.background == color){
-        if(document.getElementById('1.2').style.background == color){
-          if(document.getElementById('1.3').style.background == color){
-            if(document.getElementById('1.4').style.background == color){
-              if(document.getElementById('1.5').style.background == color){
-                if(document.getElementById('2.1').style.background == color){
-                  if(document.getElementById('2.2').style.background == color){
-                    if(document.getElementById('2.3').style.background == color){
-                      if(document.getElementById('2.4').style.background == color){
-                        if(document.getElementById('2.5').style.background == color){
-                          if(document.getElementById('3.1').style.background == color){
-                            if(document.getElementById('3.2').style.background == color){
-                              if(document.getElementById('3.3').style.background == color){
-                                if(document.getElementById('3.4').style.background == color){
-                                  if(document.getElementById('3.5').style.background == color){
-                                    if(document.getElementById('4.1').style.background == color){
-                                      if(document.getElementById('4.2').style.background == color){
-                                        if(document.getElementById('4.3').style.background == color){
-                                          if(document.getElementById('4.4').style.background == color){
-                                            if(document.getElementById('4.5').style.background == color){
-                                              if(document.getElementById('5.1').style.background == color){
-                                                if(document.getElementById('5.2').style.background == color){
-                                                  if(document.getElementById('5.3').style.background == color){
-                                                    if(document.getElementById('5.4').style.background == color){
-                                                      if(document.getElementById('5.5').style.background == color){
-                                                        setTimeout(() => { alert("Congrats! YOU ARE WINNER!")
-                                                        document.location.reload(true); }, 500);
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+if(document.getElementById('1.1').style.background == color){
+if(document.getElementById('1.2').style.background == color){
+if(document.getElementById('1.3').style.background == color){
+if(document.getElementById('1.4').style.background == color){
+if(document.getElementById('1.5').style.background == color){
+if(document.getElementById('2.1').style.background == color){
+if(document.getElementById('2.2').style.background == color){
+if(document.getElementById('2.3').style.background == color){
+if(document.getElementById('2.4').style.background == color){
+if(document.getElementById('2.5').style.background == color){
+if(document.getElementById('3.1').style.background == color){
+if(document.getElementById('3.2').style.background == color){
+if(document.getElementById('3.3').style.background == color){
+if(document.getElementById('3.4').style.background == color){
+if(document.getElementById('3.5').style.background == color){
+if(document.getElementById('4.1').style.background == color){
+if(document.getElementById('4.2').style.background == color){
+if(document.getElementById('4.3').style.background == color){
+if(document.getElementById('4.4').style.background == color){
+if(document.getElementById('4.5').style.background == color){
+if(document.getElementById('5.1').style.background == color){
+if(document.getElementById('5.2').style.background == color){
+if(document.getElementById('5.3').style.background == color){
+if(document.getElementById('5.4').style.background == color){
+if(document.getElementById('5.5').style.background == color){
+setTimeout(() => { alert("Congrats! YOU ARE WINNER!")
+document.location.reload(true); }, 500);}}}}}}}}}}}}}}}}}}}}}}}}}}
+
+function RestartGAME(){
+  
+  Default()
+
+  document.getElementById('1.1').style.background = colors
+  document.getElementById('1.2').style.background = colors
+  document.getElementById('1.3').style.background = colors
+  document.getElementById('1.4').style.background = colors
+  document.getElementById('1.5').style.background = colors
+  document.getElementById('2.1').style.background = colors
+  document.getElementById('2.2').style.background = colors
+  document.getElementById('2.3').style.background = colors
+  document.getElementById('2.4').style.background = colors
+  document.getElementById('2.5').style.background = colors
+  document.getElementById('3.1').style.background = colors
+  document.getElementById('3.2').style.background = colors
+  document.getElementById('3.3').style.background = colors
+  document.getElementById('3.4').style.background = colors
+  document.getElementById('3.5').style.background = colors
+  document.getElementById('4.1').style.background = colors
+  document.getElementById('4.2').style.background = colors
+  document.getElementById('4.3').style.background = colors
+  document.getElementById('4.4').style.background = colors
+  document.getElementById('4.5').style.background = colors
+  document.getElementById('5.1').style.background = colors
+  document.getElementById('5.2').style.background = colors
+  document.getElementById('5.3').style.background = colors
+  document.getElementById('5.4').style.background = colors
+  document.getElementById('5.5').style.background = colors
+
+  document.getElementById('1.1').style.boxShadow = shadowNONE
+  document.getElementById('1.2').style.boxShadow = shadowNONE
+  document.getElementById('1.3').style.boxShadow = shadowNONE
+  document.getElementById('1.4').style.boxShadow = shadowNONE
+  document.getElementById('1.5').style.boxShadow = shadowNONE
+  document.getElementById('2.1').style.boxShadow = shadowNONE
+  document.getElementById('2.2').style.boxShadow = shadowNONE
+  document.getElementById('2.3').style.boxShadow = shadowNONE
+  document.getElementById('2.4').style.boxShadow = shadowNONE
+  document.getElementById('2.5').style.boxShadow = shadowNONE
+  document.getElementById('3.1').style.boxShadow = shadowNONE
+  document.getElementById('3.2').style.boxShadow = shadowNONE
+  document.getElementById('3.3').style.boxShadow = shadowNONE
+  document.getElementById('3.4').style.boxShadow = shadowNONE
+  document.getElementById('3.5').style.boxShadow = shadowNONE
+  document.getElementById('4.1').style.boxShadow = shadowNONE
+  document.getElementById('4.2').style.boxShadow = shadowNONE
+  document.getElementById('4.3').style.boxShadow = shadowNONE
+  document.getElementById('4.4').style.boxShadow = shadowNONE
+  document.getElementById('4.5').style.boxShadow = shadowNONE
+  document.getElementById('5.1').style.boxShadow = shadowNONE
+  document.getElementById('5.2').style.boxShadow = shadowNONE
+  document.getElementById('5.3').style.boxShadow = shadowNONE
+  document.getElementById('5.4').style.boxShadow = shadowNONE
+  document.getElementById('5.5').style.boxShadow = shadowNONE
+}

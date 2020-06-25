@@ -2,9 +2,7 @@
 let start_button = document.createElement('div');
         start_button.className = "start_button";
         start_button.innerHTML = `<input id="but" type="button" value="START" onclick="Default()">`;
-            document.body.append(start_button);      
-
-            
+            document.body.append(start_button);
 // GAME
         document.getElementById('but').addEventListener('click', function Create2(event) {
             let main = document.createElement('div');
@@ -41,8 +39,6 @@ let start_button = document.createElement('div');
             document.body.append(main);
             document.getElementById('but').classList.add('hide')
             })
-
-
 //counter
             let nixcont = document.createElement('div');
             nixcont.className = "nixcont";
@@ -75,15 +71,7 @@ let start_button = document.createElement('div');
                                     </div>
                                 `;
             document.body.append(nixcont);
-
-
 //fake game
-
-
-
-   
-
-
     let fakemain = document.createElement('div');
             fakemain.className = "fakemain";
             fakemain.innerHTML =`
